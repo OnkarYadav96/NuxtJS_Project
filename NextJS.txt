@@ -1,0 +1,39 @@
+To creatae project ==> npx create-next-app@latest .
+When you imported file need to use "@/" e.g import Card from "@/components/Card";
+You can create page file always name with "page.tsx" inside different folders e.g about ==> page.tsx, contact ==> page.tsx
+
+Theire are 2 types of files in Nextjs "PAGEs" & "COMPONENTS"
+layout.tsx file used for initail layout routing inside this {children} are used for to render routed code of file (page/components)
+
+instead of <a> tag you can use <Link> tag for routing without reload the page
+
+
+******************* NextJS used Both SSR & CSR ******************
+Server side rendering ==> e.g Read a Blog (No iteraction of user with page)
+Client Side Rendering ==> When user want to interact with page (Product add to cart)
+
+
+Next JS bydefault use SSR
+If we want to convert SSR to CSR component use "use client" above inside the file
+Also we can create different small CSR component to used in SSR (e.g Button Component import inside SSR Page)
+
+******************************* Dynamic Route  **************************
+use [] as folder name e.g [name] as for diffrent profile names to show cards
+Need to use Props along with Promises inside italics
+
+******************************* Server Functions *********************************
+Its nothing but simple Functions
+At starting of file you can write "use server"
+If we done some action on Frontend side it wiil trigger in backend (its uses some public API for this actions, its is Secure for Athunticates, Authorization)
+e.g if we want to create a user on server side
+
+
+
+
+https://www.youtube.com/watch?v=aEo95gIYYv4 ==>1:01
+
+
+
+“I led the end-to-end delivery of a GenAI-powered support assistant embedded in our Sales CRM (MSP/MCE) so that sales reps and internal CRM users could ask natural-language questions about Leads and Opportunities—status, activities, history, commercial data—without opening ten screens or calling support.
+
+I owned requirements, architecture, backend orchestration, LLM integration, security, frontend UX, testing, and rollout planning. The assistant is grounded in live CRM data from ENOVIA, not a generic chatbot: every answer is built from the user’s current deal context plus a two-phase LLM pipeline—classify what data is needed, then answer with only that context—to control cost, latency, and hallucinations.”
